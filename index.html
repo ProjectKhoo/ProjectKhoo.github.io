@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jakarta Cyber Security</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #0f0;
+            font-family: 'Courier New', Courier, monospace;
+            background-image: url('https://i.imgur.com/zO7HbTG.jpg'); /* URL gambar Monas */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            overflow-x: hidden;
+        }
+
+        /* Overlay untuk memberi kesan cyber */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            background-color: rgba(17, 17, 17, 0.9);
+            border-bottom: 2px solid #0f0;
+            position: relative;
+            animation: header-glow 3s infinite;
+        }
+
+        @keyframes header-glow {
+            0% { box-shadow: 0 0 10px #0f0; }
+            50% { box-shadow: 0 0 30px #0f0; }
+            100% { box-shadow: 0 0 10px #0f0; }
+        }
+
+        .glitch {
+            font-size: 4em;
+            color: #0f0;
+            position: relative;
+            animation: glitch 1.5s infinite;
+        }
+
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-5px, 2px); }
+            40% { transform: translate(5px, -2px); }
+            60% { transform: translate(-5px, -2px); }
+            80% { transform: translate(5px, 2px); }
+            100% { transform: translate(0); }
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgba(17, 17, 17, 0.9);
+            border: 2px solid #0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+            animation: card-fade 1.5s ease-in-out;
+        }
+
+        @keyframes card-fade {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .card:hover {
+            box-shadow: 0 0 40px rgba(0, 255, 0, 1);
+            transform: scale(1.05);
+            transition: 0.3s ease;
+        }
+
+        .cyber-feature {
+            border: 2px solid #0f0;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(17, 17, 17, 0.9);
+            margin-top: 50px;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+            animation: feature-glow 3s infinite;
+        }
+
+        @keyframes feature-glow {
+            0% { box-shadow: 0 0 10px rgba(0,255,0,0.75); }
+            50% { box-shadow: 0 0 30px rgba(0,255,0,0.75); }
+            100% { box-shadow: 0 0 10px rgba(0,255,0,0.75); }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(17, 17, 17, 0.9);
+            border-top: 2px solid #0f0;
+            position: relative;
+            animation: footer-glow 3s infinite;
+            z-index: 1;
+        }
+
+        @keyframes footer-glow {
+            0% { box-shadow: 0 0 10px #0f0; }
+            50% { box-shadow: 0 0 30px #0f0; }
+            100% { box-shadow: 0 0 10px #0f0; }
+        }
+
+        /* Animasi untuk smartphone */
+        @media (max-width: 600px) {
+            .glitch {
+                font-size: 2.5em;
+            }
+
+            header {
+                font-size: 1.8em;
+            }
+
+            .card {
+                padding: 15px;
+                font-size: 0.9em;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <span class="glitch">KHOO SUKA TOBRUT</span>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <h2>KALO LAGI SAKIT ENAK MINUM APA YAH</h2>
+                <p>KATA ORANG SIH GOLDA ENAK DI MINUM..</p>
+            </div>
+            <div class="card">
+                <h2>SARAN KALIAN ENAK PP GURB ATAU JOIN OWNER HEMM</h2>
+                <p>BANTU SARAN COO DH 7 BULAN MIKIR</p>
+            </div>
+            <div class="card">
+                <h2>NIH AK KASI TUTOR CARA SUPAYA WA KEBAL</h2>
+                <p>PAKAI WA OLD TOLOL TOLOL WA BARU DI AJAK NGE JB MANA GA KENON HADEH</p>
+            </div>
+            <div class="card">
+                <h2>BANTU SV WA SAYE PAK CIK</h2>
+                <p>https://wa.me/6283851711042</p>
+            </div>
+        </div>
+
+        <div class="cyber-feature">
+            <h2>BANTU YAH SV NO DI ATAS SUPAYA G KENAL CLONE GANTENG</h2>
+            <p>GA SV MATI AJA DH WOKWOKWOK</p>
+        </div>
+
+        <div class="cyber-feature">
+            <h2>WEB INI MASI DALAM PERKEMBANGAN YAH ADIK ADIK RORRR</h2>
+            <p>JADI TOLONG SUPORT NYA DARI KALIAN MAKASIHHH</p>
+        </div>
+
+        <div class="cyber-feature">
+            <h2>LOVE YOUUU SEMUA MUAHHH MUAHHH</h2>
+            <p>UHUY ROWRRR</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; PROJEK GUE MASI DALAM TAHAP PERKEMBANGAN JADI MAAF KALO G JELAS</p>
+    </footer>
+</body>
+</html>
